@@ -1,0 +1,9 @@
+<form style="margin-bottom: 20px;">
+    <p>请选择一个视频（本地操作不会上传）</p>
+    <input type="file" required name="file">
+    <label>时间(秒)</label><input type="number" step="1" value="0" required name="time">
+    <input type="submit" value="获取图像" style="font-size:16px;">
+</form>
+<p id="text-tip">WASM下载解析中，请稍候。。。<br>（解析需约5s，手机上需要的时间较长，可先选择一个视频文件）</p>
+<div id="error-tip"></div>
+<canvas width="600" height="400" id="canvas"></canvas>
